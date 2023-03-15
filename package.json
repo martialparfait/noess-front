@@ -1,0 +1,24 @@
+{
+  "name": "noess-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/main.css -o ./dist/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martialparfait/noess-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martialparfait/noess-front/issues"
+  },
+  "homepage": "https://github.com/martialparfait/noess-front#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "tailwindcss": "^3.2.7"
+  }
+}
