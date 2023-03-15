@@ -22,7 +22,11 @@ module.exports = {
         900: "#000000",
       },
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'custom': '0px 0px 20px rgba(0, 0, 0, 0.07)',
+      },
+    },
   },
   plugins: [],
 };

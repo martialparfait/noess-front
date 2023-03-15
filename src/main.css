@@ -3,5 +3,28 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Ul Custom Style */
+
+ul {
+  list-style-type: none !important;
+  margin: 0 !important;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #315eff;
+  margin-right: 0.5rem;
+}
+
+/* Custom border Radius */
+.custom-radius {
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
 }
