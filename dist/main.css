@@ -547,6 +547,10 @@ video {
   }
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -580,6 +584,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -588,8 +596,20 @@ video {
   display: grid;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
 }
 
 .list-disc {
@@ -602,6 +622,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -620,6 +644,10 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-\[50\%\] {
+  border-radius: 50%;
 }
 
 .rounded-full {
@@ -712,9 +740,27 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .text-\[\#43BEA1\] {
   --tw-text-opacity: 1;
   color: rgb(67 190 161 / var(--tw-text-opacity));
+}
+
+.text-\[\#535253\] {
+  --tw-text-opacity: 1;
+  color: rgb(83 82 83 / var(--tw-text-opacity));
+}
+
+.text-\[\#7a797a\] {
+  --tw-text-opacity: 1;
+  color: rgb(122 121 122 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -761,7 +807,54 @@ ul li::before {
   border-bottom-right-radius: 100% 10%;
 }
 
+/* Slider */
+
+.carousel {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dadde2;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #010001;
+  transform: scale(2);
+}
+
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }
@@ -770,11 +863,33 @@ ul li::before {
     width: 60%;
   }
 
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .lg\:max-w-\[80\%\] {
+    max-width: 80%;
   }
 }

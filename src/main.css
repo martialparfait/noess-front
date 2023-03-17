@@ -28,3 +28,37 @@ ul li::before {
   border-bottom-left-radius: 100% 10%;
   border-bottom-right-radius: 100% 10%;
 }
+
+/* Slider */
+.carousel {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dadde2;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #010001;
+  transform: scale(2);
+}
