@@ -50,6 +50,10 @@ module.exports = {
     extend: {
       boxShadow: {
         custom: "0px 0px 20px rgba(0, 0, 0, 0.07)",
+        left: "-50px 0px 0px 0px #04348c",
+      },
+      borderRadius: {
+        custom: "120px 120px",
       },
     },
   },
