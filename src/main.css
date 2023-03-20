@@ -62,3 +62,9 @@ ul li::before {
   background-color: #010001;
   transform: scale(2);
 }
+
+/* Breadcrumb */
+
+.custom-rounded {
+  border-bottom-left-radius: 300px 300px;
+}
